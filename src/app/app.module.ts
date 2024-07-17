@@ -15,6 +15,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { NavComponent } from './components/headers/nav/nav.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { FormsModule, ReactiveFormsModule} from '@angular/forms';
     AppComponent,
     LoginComponent,
     RegistrarComponent,
-    IndexComponent
+    IndexComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
