@@ -13,12 +13,18 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { NavComponent } from './components/headers/nav/nav.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegistrarComponent,
-    IndexComponent
+    IndexComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +32,9 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     BrowserAnimationsModule, // Agregado
     MatMenuModule,           // Agregado
     MatButtonModule,         // Agregado
-    MatIconModule            // Agregado
+    MatIconModule,          // Agregado
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration(),
